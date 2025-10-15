@@ -33,7 +33,7 @@ const SignUp = () => {
       });
 
       if (error) throw error;
-      alert('Check your email for verification link.');
+      alert('Account Created. Go back to Login');
     } catch (error) {
       alert(error.message);
     }
