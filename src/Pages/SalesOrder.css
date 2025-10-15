@@ -1,0 +1,247 @@
+button {
+  background-color: #355E3B;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.table-container {
+  width: calc(100% - 290px);
+  margin-left: 270px;
+  margin-right: 20px;
+  overflow-x: auto;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.03),
+    0 4px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px;
+  white-space: nowrap;
+}
+
+thead {
+  background: #355E3B;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #f1f7ff;
+}
+
+table button {
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+thead th {
+  padding: 12px;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.salesorder-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: calc(100% - 290px);
+  margin-left: 270px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.salesorder-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+
+.salesorder-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.salesorder-form .form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.salesorder-form .form-group input,
+.salesorder-form .form-group select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.salesorder-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.salesorder-form button {
+  background: #355E3B;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0px;
+}
+
+.salesorder_searchform {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: calc(100% - 290px);
+  margin-left: 270px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.salesorder_searchform input,
+.salesorder_searchform select {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-left: 5px;
+}
+
+.salesorder_searchform button {
+  margin-bottom: 0.7%;
+  margin-left: 20px;
+}
+
+.salesorder_modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.salesorder_modal {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.salesorder_modal h1 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.salesorder_modal form input,
+.salesorder_modal form select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.salesorder_modal input,
+.salesorder_modal select {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.salesorder_modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.salesorder_modal-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.salesorder_modal-buttons button:hover {
+  opacity: 0.9;
+}
+
+.SalesOrder h2 {
+  position: relative;
+  left: 250px;       
+  margin-top: 30px;
+  padding-left: 20px; 
+}
+
+.delete_btn {
+  background-color: red;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

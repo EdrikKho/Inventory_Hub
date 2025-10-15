@@ -1,0 +1,93 @@
+/* Reset page defaults */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;   /* prevent sideways scroll */
+  overflow-y: hidden;   /* prevent vertical scroll unless modal opens */
+}
+
+/* Fullscreen flexbox centering */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;       /* ✅ dynamic viewport height (fixes mobile toolbars) */
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0;           /* ✅ remove extra height from padding */
+    box-sizing: border-box;
+}
+
+/* Card style */
+.login-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+/* Title */
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Inputs */
+.login-card input {
+  width: 93%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  color: #333;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #355E3B;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #355E3B;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+  margin: 0 auto;  /* centers it horizontally */
+}
+
+.login-card button:hover {
+  background-color: #355E3B;
+}
+
+/* Footer text */
+.login-card p {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-card a {
+  color: #355E3B;
+  text-decoration: none;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
