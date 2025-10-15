@@ -341,6 +341,12 @@ const SalesOrder = () => {
             ProdNo: LineItem2.prodno
         })
         .eq('ID', lineitemId) 
+
+        if (error) {
+            console.error("Update error:", error);
+            alert("Error updating line item: " + error.message);
+            return; 
+        }
                   
         fetchLineItems()
         fetchSalesOrders()
