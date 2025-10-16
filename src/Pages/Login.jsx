@@ -20,6 +20,10 @@ const Login = ({ setToken }) => {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    if (formData.Email.trim() === '' || formData.Password.trim() === '') {
+      alert('Please fill in both Email and Password.');
+      return;
+    }
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email: formData.Email,
