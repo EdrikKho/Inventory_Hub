@@ -186,6 +186,7 @@ const PurchaseOrder = () => {
                 ProdNo: OrderItem.prodno 
             })
             fetchOrderItems()
+            fetchProducts()
         }
         setOrderItem({
             qty: '',
@@ -314,6 +315,7 @@ const PurchaseOrder = () => {
         .eq('ID', orderitemId) 
               
         fetchOrderItems()
+        fetchProducts()
         if(error) console.log(error)
         if(data) console.log(data)
     
