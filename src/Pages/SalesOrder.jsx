@@ -189,11 +189,6 @@ const SalesOrder = () => {
             if (error) {
                 if (error.message.includes("Insufficient stock")) {
                     alert("The quantity entered exceeds the available stock for this product.");
-                    setLineItem({
-                        qty: '',
-                        sodno: '',
-                        prodno: ''
-                    });
                 } else {
                     alert("Error adding line item: " + error.message);
                 }
