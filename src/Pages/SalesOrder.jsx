@@ -338,9 +338,13 @@ const SalesOrder = () => {
         .eq('ID', lineitemId) 
 
         if (error) {
+            if (error.message.includes("Insufficient stock")) {
+                alert("The updated quantity exceeds the available stock for this product.");
+            } else {
+                alert("Error updating line item: " + error.message);
+            }
             console.error("Update error:", error);
-            alert("Error updating line item: " + error.message);
-            return; 
+            return;
         }
                   
         fetchLineItems()
