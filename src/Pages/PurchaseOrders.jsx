@@ -269,7 +269,7 @@ const PurchaseOrder = () => {
     }
 
     async function updatePurchaseOrder(purchaseorderId){
-        if (!PurchaseOrder2.qty || !PurchaseOrder2.podno || !PurchaseOrder2.prodno) {
+        if (!PurchaseOrder2.date || !PurchaseOrder2.status || !PurchaseOrder2.empid || !PurchaseOrder2.supid) {
             alert("Please fill in all required fields before saving any changes.")
             return;
         }
