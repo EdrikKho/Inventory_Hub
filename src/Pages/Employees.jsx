@@ -399,7 +399,7 @@ const Employees = () => {
                                 <td>{Employee.Contact_no}</td>
                                 <td>{Employee.City_Town}</td>
                                 <td>{Employee.Barangay}</td>
-                                <td>{Employee.Salary}</td>
+                                <td>P {Employee.Salary}</td>
                                 <td>{Employee.EmpType}</td>
                                 <td>
                                     <button className="delete_btn" onClick={() => { deleteEmployee(Employee.ID) }}>Delete</button>
