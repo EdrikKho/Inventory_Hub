@@ -397,7 +397,7 @@ const PurchaseOrder = () => {
                     <option value="">-- Select Employee --</option>
                         {Employees.map((emp) => (
                         <option key={emp.ID} value={emp.ID}>
-                            {emp.ID} - {emp.FName} {emp.MName} {emp.LName}
+                            {emp.ID} - {emp.FName} {emp.MName} {emp.LName} - {emp.EmpType}
                         </option>
                         ))}
                     </select>
@@ -504,7 +504,7 @@ const PurchaseOrder = () => {
                             <option value="">-- Select Employee --</option>
                             {Employees.map((emp) => (
                             <option key={emp.ID} value={emp.ID}>
-                                {emp.ID} - {emp.FName} {emp.MName} {emp.LName}
+                                {emp.ID} - {emp.FName} {emp.MName} {emp.LName} - {emp.EmpType}
                             </option>
                             ))}
                         </select>
