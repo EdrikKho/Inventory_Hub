@@ -99,13 +99,11 @@ const Homepage = () => {
         fetchPendingSalesOrders();
         fetchPendingPurchaseOrders();
 
-        // 🗓️ Auto-select current month when page loads
         const now = new Date();
-        const currentMonth = now.toISOString().slice(0, 7); // e.g. "2025-10"
+        const currentMonth = now.toISOString().slice(0, 7); 
         setSelectedMonth(currentMonth);
     }, []);
 
-    // Refetch sales whenever month changes
     useEffect(() => {
         fetchDailySalesReport(selectedMonth);
     }, [selectedMonth]);
