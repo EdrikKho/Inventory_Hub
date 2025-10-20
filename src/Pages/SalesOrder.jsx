@@ -475,7 +475,9 @@ const SalesOrder = () => {
                         onChange={handleChange3}
                     >
                     <option value="">-- Select Sales Order --</option>
-                        {SalesOrders.map((so) => (
+                        {SalesOrders
+                            .filter(so => so.Status === "Pending")
+                            .map((so) => (
                         <option key={so.ID} value={so.ID}>
                             {so.ID}
                         </option>
