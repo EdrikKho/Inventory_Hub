@@ -269,8 +269,8 @@ const Employees = () => {
                         className="form-control"
                     >
                         <option value="">-- Select Type --</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
+                        <option value="S">Staff</option>
+                        <option value="M">Manager</option>
                     </select>
                     </div>
                 </div>
@@ -340,8 +340,8 @@ const Employees = () => {
                             onChange={handleChange2}
                         >
                             <option value="">-- Select Type --</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
+                            <option value="S">Staff</option>
+                            <option value="M">Manager</option>
                         </select>
                         <div className="employee_modal-buttons">
                         <button type="submit">Save Changes</button>
