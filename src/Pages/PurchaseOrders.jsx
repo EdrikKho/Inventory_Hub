@@ -395,7 +395,9 @@ const PurchaseOrder = () => {
                         onChange={handleChange}
                     >
                     <option value="">-- Select Employee --</option>
-                        {Employees.map((emp) => (
+                        {Employees
+                            .filter(emp => emp.EmpType === "M")
+                            .map((emp) => (
                         <option key={emp.ID} value={emp.ID}>
                             {emp.ID} - {emp.FName} {emp.MName} {emp.LName} - {emp.EmpType}
                         </option>
@@ -502,7 +504,9 @@ const PurchaseOrder = () => {
                             onChange={handleChange2}
                         >
                             <option value="">-- Select Employee --</option>
-                            {Employees.map((emp) => (
+                            {Employees
+                                .filter(emp => emp.EmpType === "M")
+                                .map((emp) => (
                             <option key={emp.ID} value={emp.ID}>
                                 {emp.ID} - {emp.FName} {emp.MName} {emp.LName} - {emp.EmpType}
                             </option>
