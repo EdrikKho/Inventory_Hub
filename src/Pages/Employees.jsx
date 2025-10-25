@@ -183,7 +183,7 @@ const Employees = () => {
                     <li><Link to='/SalesOrder'>Sales Orders</Link></li>
                 </ul>
                 <div className="logout">
-                    <li onClick={handleLogout}>Logout</li>
+                    <li onClick={handleLogout}>Log Out</li>
                 </div>
             </div>
 
